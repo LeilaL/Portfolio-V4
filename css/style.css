@@ -1,0 +1,155 @@
+html, body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+/*$$$$$$$$$$$$$$HEADER$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+header, .navbar-default {
+  background-color: #ddd;
+}
+
+.navbar-default {
+  border-color: none !important;
+}
+
+.navbar-fixed-top {
+  border-width: 0;
+}
+
+#brand, .navbar-default .navbar-nav>li>a, header h1, .arrow-down {
+  color: #095057;
+  /*#095057*/
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  color: #F24C58;
+}
+
+header nav a:after, .navbar-header a:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 1px;
+	width: 0%;
+	background: transparent;
+	transition: .5s;
+}
+
+header nav a:hover:after, .navbar-header a:hover:after {
+	width: 100%;
+	background: #F24C58;
+}
+
+.welcome {
+  padding: 200px;
+  background: url ("img/portfolio.png") center center no-repeat fixed;
+  background-size: cover;
+  /*height: 100vh;*/
+  letter-spacing: 10px;
+}
+
+.welcome h1:hover {
+  color: #F24C58;
+}
+
+.arrow-down a {
+  color: #095057;
+}
+
+.arrow-down a:hover {
+  transition: color 0.3s linear;
+  color: #F24C58;
+}
+
+
+
+/*$$$$$$$$$$$$$$$$$$$ ABOUT $$$$$$$$$$$$$$$$$$$$$$$*/
+
+#about {
+text-align: center;
+min-height: 100vh;
+width: 100%;
+background-color: white;
+}
+
+.about {
+padding: 0% 15%;
+}
+
+.about h1 {
+margin: 5%;
+color: #095057;
+}
+
+.about h2 {
+  color: #095057;
+}
+
+.about p {
+font-size: 19px;
+color: #095057;
+
+}
+
+.about img {
+display: inline-block;
+height: 33vh;
+}
+
+/*$$$$$$$$$$$$$$$$ CONTACT $$$$$$$$$$$$$$$$$$$*/
+
+section {
+  background-color: #ddd;
+  color: #095057;
+  margin-bottom: 30px;
+}
+section .social {
+  margin: 80px 0;
+}
+
+section h4 {
+  margin-bottom: 40px;
+}
+
+section a {
+  color: #095057;
+  transition: color 0.3s linear;
+  margin-right: 20px;
+}
+
+section a:hover {
+  color: #F24C58;
+}
+
+section ul, footer small {
+  display: inline;
+}
+
+section small {
+  margin: 5px 20px;
+  font-size: 0.7em;
+}
+
+.list-inline>li {
+  margin-top: 20px;
+}
+
+
+/*$$$$$$$$$$$$$$$$$$$$ FOOTER $$$$$$$$$$$$$$$$$$$*/
+
+footer .footer-below {
+    padding: 25px 0;
+    background-color: #DDDDDD;
+}
+
+footer .fa-fw {
+  color: red;
+  font-size: 24px;
+}
+
+footer p {
+  color: #F24C58;
+}
