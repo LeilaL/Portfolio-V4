@@ -45,10 +45,11 @@ header nav a:hover:after, .navbar-header a:hover:after {
 
 .welcome {
   padding: 200px;
-  background: url ("../img/portfolio.jpg") center center no-repeat fixed;
+  background: url("../img/portfolio.jpg") center center no-repeat fixed;
   background-size: cover;
-  /*height: 100vh;*/
+  height: 100vh;
   letter-spacing: 10px;
+  font-size: 30px;
 }
 
 .welcome h1:hover {
@@ -104,6 +105,10 @@ header nav a:hover:after, .navbar-header a:hover:after {
   font-family: 'Open Sans', sans-serif;
   color: #095057;
   margin-top: 100px;
+}
+
+#portfolio h2 {
+  font-size: 36px;
 }
 
 .carousel-inner img {
