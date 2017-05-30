@@ -1,6 +1,6 @@
 @font-face {
   font-family: "diamond";
-  src: url(../fonts/MoonlightsontheBeach.ttf);
+  src: url(../fonts/black_diamonds/BlackDiamondsPersonalUse.ttf);
 }
 
 html, body {
@@ -22,6 +22,11 @@ header, .navbar-default {
 
 .navbar-fixed-top {
   border-width: 0;
+}
+
+#brand {
+  font-family: "diamond";
+  font-size: 30px;
 }
 
 #brand, .navbar-default .navbar-nav>li>a, header h1, .arrow-down {
@@ -88,6 +93,8 @@ header nav a:hover:after, .navbar-header a:hover:after {
 .about h1 {
   margin: 5%;
   color: #095057;
+  font-family: "diamond";
+  font-size: 50px;
 }
 
 .about h2 {
@@ -107,13 +114,13 @@ header nav a:hover:after, .navbar-header a:hover:after {
 
 /*$$$$$$$$$$$$$$$$ PORTFOLIO $$$$$$$$$$$$$$$$$$$*/
 #portfolio .text-center {
-  font-family: 'Open Sans', sans-serif;
   color: #095057;
   margin-top: 100px;
 }
 
 #portfolio h2 {
-  font-size: 36px;
+  font-size: 50px;
+  font-family: "diamond";
 }
 
 .carousel-inner img {
@@ -137,9 +144,9 @@ section .social {
 
 section h3 {
   margin-bottom: 40px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "diamond";
   color: #095057;
-  font-size: 35px;
+  font-size: 50px;
 }
 
 section a {
