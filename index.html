@@ -5,15 +5,18 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Leila Portfolio</title>
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" href="img/lune.png">
-
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/bootstrap.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="js/vendor/modernizr-2.8.3.min.js"></script>
   <script src="js/bootstrap.js"></script>
 </head>
@@ -87,7 +90,9 @@
       <div class="carousel-inner">
 
         <div class="item active">
+          <a href="" data-toggle="modal" data-target="#myModal">
           <img src="img/spotlight.png" alt="screen spotlight">
+          </a>
           <div class="carousel-caption">
             <h3>Spotlight</h3>
             <p>Website Agence Web</p>
@@ -95,7 +100,9 @@
         </div>
 
         <div class="item">
-          <img src="everlasting" alt="screen tatoo">
+          <a href="" data-toggle="modal" data-target="#modal">
+          <img src="img/everlasting.png" alt="screen tatoo">
+        </a>
           <div class="carousel-caption">
             <h3>Everlasting</h3>
             <p>Website Tatoo</p>
@@ -103,10 +110,36 @@
         </div>
 
         <div class="item">
-          <img src="airbnb.png" alt="screen airbnb">
+          <a href="" data-toggle="modal" data-target="#mode">
+          <img src="img/airbnb.png" alt="screen airbnb">
+        </a>
           <div class="carousel-caption">
             <h3>Airbnb</h3>
             <p>Reproduction Airbnb home page</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="img/workhard.png" alt="screen workhard">
+          <div class="carousel-caption">
+            <h3>WorkHard</h3>
+            <p>Site Coach Sportif</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="img/google.png" alt="screen google">
+          <div class="carousel-caption">
+            <h3>Google</h3>
+            <p>Reproduction Google Page</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="img/cv.png" alt="screen cv">
+          <div class="carousel-caption">
+            <h3>My CV</h3>
+            <p>Creation CV</p>
           </div>
         </div>
 
@@ -124,6 +157,68 @@
     </div>
   </div>
 
+
+  <!--================= MODAL ======================-->
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Spotlight</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Spotlight, un site d'agence web pour des idées lumineuses.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary"><a href="https://leilal.github.io/Spotlight/" target="_blank"></a>Voir le site</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Everlasting</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Everlasting, le site du tatoueur.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary"><a href="https://leilal.github.io/TattoWebSite/" target="_blank"></a>Voir le site</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="mode" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Airbnb</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Reproduction de la page d'accueil d' Airbnb.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary"><a href="https://leilal.github.io/AirbnbPage/" target="_blank"></a>Voir le site</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!--================= CONTACT ======================-->
 
