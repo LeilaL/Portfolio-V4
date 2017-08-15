@@ -10,7 +10,7 @@ html, body {
 }
 
 
-/*$$$$$$$$$$$$$$HEADER$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+/*$$$$$$$$$$$$$$ HEADER $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 
 header, .navbar-default {
   background-color: #ddd;
@@ -113,6 +113,17 @@ header nav a:hover:after, .navbar-header a:hover:after {
 }
 
 /*$$$$$$$$$$$$$$$$ PORTFOLIO $$$$$$$$$$$$$$$$$$$*/
+.images {
+  width: 60%;
+  /*height: 300px;*/
+  position: absolute;
+  margin-left: 12%;
+}
+
+#portfolio {
+  margin-bottom: 25%;
+}
+
 #portfolio .text-center {
   color: #095057;
   margin-top: 100px;
