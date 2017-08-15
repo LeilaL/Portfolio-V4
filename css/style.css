@@ -112,6 +112,10 @@ header nav a:hover:after, .navbar-header a:hover:after {
   height: 33vh;
 }
 
+.skills {
+  margin-left: 37%;
+}
+
 /*$$$$$$$$$$$$$$$$ PORTFOLIO $$$$$$$$$$$$$$$$$$$*/
 .images {
   width: 60%;
@@ -204,6 +208,7 @@ section ul, footer small {
 #contact {
   margin-top: 100px;
 }
+
 
 
 /*$$$$$$$$$$$$$$$$$$$$ FOOTER $$$$$$$$$$$$$$$$$$$*/
