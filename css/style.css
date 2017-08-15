@@ -143,9 +143,23 @@ header nav a:hover:after, .navbar-header a:hover:after {
   border-color:  #F24C58;
 }
 
-modal-footer .btn-primary:hover {
+.modal-footer .btn-primary:hover {
   background-color: #095057;
 }
+
+#exampleModalLabel {
+  font-family: "diamond";
+  font-size: 25px;
+  margin-left: 50%;
+  color: #095057;
+}
+
+.modal-body {
+  font-size: 19px;
+  color: #095057;
+}
+
+
 
 /*$$$$$$$$$$$$$$$$ CONTACT $$$$$$$$$$$$$$$$$$$*/
 
