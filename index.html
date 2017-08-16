@@ -1,329 +1,338 @@
 <!doctype html>
 <html class="no-js" lang="fr">
+
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Leila Portfolio</title>
+    <title>Leila Portfolio</title>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="icon" href="img/lune.png">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="img/lune.png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-  <script src="js/bootstrap.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="js/bootstrap.js"></script>
 
 </head>
+
 <body>
-  <!--[if lt IE 8]>
+    <!--[if lt IE 8]>
   <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
-  <!--============== HEADER =======================-->
+    <!--============== HEADER =======================-->
 
 
-  <header>
-    <div class="container-fluid navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <a id="brand" href="#welcome" class="navbar-brand .sliding-u-r-l">Leila</a>
-          <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle">
+    <header>
+        <div class="container-fluid navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a id="brand" href="#welcome" class="navbar-brand .sliding-u-r-l">Leila</a>
+                    <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle">
             <span class="sr-only">Toggle Navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
+                </div>
+                <nav>
+                    <ul class="nav navbar-nav navbar-right collapse navbar-collapse" id="myCollapsible">
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#portfolio">PORTFOLIO</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-        <nav>
-          <ul class="nav navbar-nav navbar-right collapse navbar-collapse" id="myCollapsible">
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#portfolio">PORTFOLIO</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-          </ul>
-        </nav>
-      </div>
+        <div class="container-fluid welcome" id="welcome">
+            <h1 class="text-center">WELCOME</h1>
+            <div class="arrow-down text-center">
+                <a href="#portfolio"><i class="fa fa-angle-down fa-2x"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!--============ CAROUSEL PORTFOLIO ==================-->
+
+    <div class="container" id="portfolio">
+        <h2 class="text-center">Portfolio</h2>
+
+        <a href="" data-toggle="modal" data-target="#mod">
+      <img class="images" src="img/airbnb.png" alt="airbnb">
+    </a>
+
+        <a href="" data-toggle="modal" data-target="#modal">
+      <img class="images" src="img/pba.png" alt="pba">
+    </a>
+
+        <a href="" data-toggle="modal" data-target="#myModal">
+      <img class="images" src="img/spotlight.png" alt="spotlight">
+    </a>
+
+        <a href="" data-toggle="modal" data-target="#mode">
+      <img class="images" src="img/google.png" alt="google">
+    </a>
+
+        <div class="nav slider mt-2">
+            <button class="mr-3" type="button" name="button" onclick="before(this)"><<</button>
+            <button type="button" name="button" onclick="slider(this)">>></button>
+        </div>
+
+
     </div>
-    <div class="container-fluid welcome" id="welcome">
-      <h1 class="text-center">WELCOME</h1>
-      <div class="arrow-down text-center">
-        <a href="#portfolio"><i class="fa fa-angle-down fa-2x"></i></a>
-      </div>
-    </div>
-  </header>
-
-  <!--============ CAROUSEL PORTFOLIO ==================-->
-
-  <div class="container" id="portfolio">
-    <h2 class="text-center">Portfolio</h2>
-
-    <a href="" data-toggle="modal" data-target="#mod">
-         <img class="images" src="img/airbnb.png" alt="airbnb">
-</a>
-
-         <a href="" data-toggle="modal" data-target="#modal">
-         <img class="images" src="img/pba.png" alt="pba">
-          </a>
-
-          <a href="" data-toggle="modal" data-target="#myModal">
-         <img class="images" src="img/spotlight.png" alt="spotlight">
-         </a>
-
-         <a href="" data-toggle="modal" data-target="#mode">
-         <img class="images" src="img/google.png" alt="google">
-</a>
-
-<div class="nav slider mt-2">
-   <button class="mr-3" type="button" name="button" onclick="before(this)"><<</button>
-   <button type="button" name="button" onclick="slider(this)">>></button>
- </div>
-
-
-  </div>
 
 
 
-  <!--================= MODAL CAROUSEL ======================-->
+    <!--================= MODAL CAROUSEL ======================-->
 
-  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Spotlight</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Spotlight</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
+                </div>
+                <div class="modal-body">
+                    Spotlight, un site d'agence web réalisé en binôme.
+                    <br> Site totalement responsive avec formulaire, utilisation des sélecteurs CSS et de flexbox pour le positionnement.
+                </div>
+                <div class="modal-footer">
+                    <a href="https://leilal.github.io/Spotlight/" target="_blank"><button type="button" class="btn btn-primary">Voir le site</button></a>
+                </div>
+            </div>
         </div>
-        <div class="modal-body">
-          Spotlight, un site d'agence web réalisé en binôme.
-          <br>
-          Site totalement responsive avec formulaire, utilisation des sélecteurs CSS et de flexbox pour le positionnement.
-        </div>
-        <div class="modal-footer">
-          <a href="https://leilal.github.io/Spotlight/" target="_blank"><button type="button" class="btn btn-primary">Voir le site</button></a>
-        </div>
-      </div>
     </div>
-  </div>
 
-  <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">PBA</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">PBA</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
+                </div>
+                <div class="modal-body">
+                    Reproduction de la page 'Agenda' du site du Palais des Beaux Arts.
+                </div>
+                <div class="modal-footer">
+                    <a href="https://leilal.github.io/Palais-des-Beaux-Arts/" target="_blank"><button type="button" class="btn btn-primary">Voir le site</button></a>
+                </div>
+            </div>
         </div>
-        <div class="modal-body">
-        Reproduction de la page 'Agenda' du site du Palais des Beaux Arts.
-        </div>
-        <div class="modal-footer">
-          <a href="https://leilal.github.io/Palais-des-Beaux-Arts/" target="_blank"><button type="button" class="btn btn-primary">Voir le site</button></a>
-        </div>
-      </div>
     </div>
-  </div>
 
-  <div class="modal fade" id="mode" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Google</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <div class="modal fade" id="mode" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Google</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
+                </div>
+                <div class="modal-body">
+                    Une reproduction de la page d’accueil de Google, la plus fidèle possible.
+                    <br> Afin de confirmer ses connaissances en HTML / CSS.
+                    <br> Et surtout maitriser le positionnement.
+                </div>
+                <div class="modal-footer">
+                    <a href="https://leilal.github.io/GooglePage/" target="_blank"><button type="button" class="btn btn-primary">Voir le site</button></a>
+                </div>
+            </div>
         </div>
-        <div class="modal-body">
-          Une reproduction de la page d’accueil de Google, la plus fidèle possible.
-          <br>
-          Afin de confirmer ses connaissances en HTML / CSS.
-          <br>
-          Et surtout maitriser le positionnement.
-        </div>
-        <div class="modal-footer">
-          <a href="https://leilal.github.io/GooglePage/" target="_blank"><button type="button" class="btn btn-primary">Voir le site</button></a>
-        </div>
-      </div>
     </div>
-  </div>
 
-  <div class="modal fade" id="mod" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Airbnb</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <div class="modal fade" id="mod" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Airbnb</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
+                </div>
+                <div class="modal-body">
+                    Reproduction de la page d'accueil d' Airbnb dans un positionnement aussi fidèle que possible.
+                </div>
+                <div class="modal-footer">
+                    <a href="https://leilal.github.io/AirbnbPage/" target="_blank"><button type="button" class="btn btn-primary">Voir le site</button></a>
+                </div>
+            </div>
         </div>
-        <div class="modal-body">
-          Reproduction de la page d'accueil d' Airbnb dans un positionnement aussi fidèle que possible.
-        </div>
-        <div class="modal-footer">
-          <a href="https://leilal.github.io/AirbnbPage/" target="_blank"><button type="button" class="btn btn-primary">Voir le site</button></a>
-        </div>
-      </div>
     </div>
-  </div>
 
-  <!--=============== ABOUT ==================-->
+    <!--=============== ABOUT ==================-->
 
-  <div id="about" class="container">
-    <div class="row">
-      <div class="col-sm-12 about">
-        <h1>About Me</h1>
-        <img src="img/portrait.jpg" class="img-responsive" alt="portrait">
-        <h2>Hi,</h2>
-        <div class="col-lg-10">
-          <p >My name is Leila, I am an aspiring web developer. I love developing clean and elegant dynamic websites and web applications. I've learned languages such as HTML, CSS, JavaScript and continually learn much more. </p>
-          <p> I am from a training in transport (Bachelor's degree), after a first experience as a shipping agent and skills acquired in web development, I would like to find a job which combining these two universes.</p>
-          <p>I have worked with popular frameworks such as Bootstrap and libraries such as jQuery. Check out my portfolio and if you're interested, send me an email. </p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-<div class="skills ">
-  <ul class="list-unstyled list-inline">
-    <li>
-<img src="img/icons8-Html 5 Filled-50-1.png" alt="html">
-</li>
-    <li>
-<img src="img/icons8-CSS3 Filled-50-1.png" alt="css">
-</li>
-    <li>
-<img src="img/icons8-Atom Editor-48-1.png" alt="atom">
- </li>
-    <li>
-<img src="img/icons8-Git Filled-50.png" alt="git">
- </li>
-    <li>
-<img src="img/icons8-JavaScript Filled-50-1.png" alt="js">
- </li>
- <li>
-<img src="img/icons8-JQuery Filled-50-1.png" alt="jquery">
-</li>
-  </ul>
-</div>
-
-
-  <!--=================  CARDS PORTFOLIO ======================-->
-
-  <div class="cartes container">
-    <div class="row ">
-      <h2 class="text-center ">More</h2>
-
-      <div class="card col-lg-4 " >
-    <img class="card-img-top " src="img/leboncoin.png" alt="screen page leboncoin">
-   <img class="info" src="img/icons8-Info-48.png" alt="">
-
-  </div>
-
-  <div class="card col-lg-4" >
-    <img class="card-img-top" src="img/memory.png" alt="screen memory game">
-   <img class="info" src="img/icons8-Info-48.png" alt="">
-
-  </div>
-
-  <div class="card col-lg-4" >
-    <img class="card-img-top" src="img/everlasting.png" alt="screen site tatoueur">
-   <img class="info"src="img/icons8-Info-48.png" alt="">
-
- </div>
-
- <div class="card col-lg-4 " >
-<img class="card-img-top " src="img/coach.png" alt="screen site coachSportif">
-<img class="info" src="img/icons8-Info-48.png" alt="">
-
-</div>
-
-<div class="card col-lg-4" >
-<img class="card-img-top" src="img/minichat.png" alt="screen minichat">
-<img class="info" src="img/icons8-Info-48.png" alt="">
-
-</div>
-
-<div class="card col-lg-4" >
-<img class="card-img-top" src="img/beautytech.png" alt="screen blog tech">
-<img class="info" src="img/icons8-Info-48.png" alt="">
-
-</div>
-
- </div>
-  </div>
-
-
-  <a href="WebCV LeilaL.pdf"
-     download >Download my CV</a>
-
-
-  <!--================= CONTACT ======================-->
-
-  <section id="contact">
-    <div class="container">
-      <div class="row text-center social">
-        <h3>Contact</h3>
-        <ul class="list-unstyled list-inline">
-          <li>
-            <a href="mailTo:leila.simplon@hotmail.com" target="_blank"><i class="fa fa-envelope fa-2x"></i></a>
-          </li>
-          <li>
-            <a href="#" target="_blank"><i class="fa fa-google-plus-square fa-2x"></i></a>
-          </li>
-          <li>
-            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official fa-2x"></i></a>
-          </li>
-          <li>
-            <a href="https://github.com/" target="_blank"><i class="fa fa-github fa-2x"></i></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!--============== FOOTER =======================-->
-
-  <footer class="text-center">
-    <div class="footer-below">
-      <div class="container">
+    <div id="about" class="container">
         <div class="row">
-          <div class="col-lg-12">
-            <p>Coded with  <i class="fa fa-fw fa-heart fa-spin"></i> by LEILA </p>
-          </div>
+            <div class="col-sm-12 about">
+                <h1>About Me</h1>
+                <img src="img/portrait.jpg" class="img-responsive" alt="portrait">
+                <h2>Hi,</h2>
+                <div class="col-lg-10">
+                    <p>My name is Leila, I am an aspiring web developer. I love developing clean and elegant dynamic websites and web applications. I've learned languages such as HTML, CSS, JavaScript and continually learn much more. </p>
+                    <p> I am from a training in transport (Bachelor's degree), after a first experience as a shipping agent and skills acquired in web development, I would like to find a job which combining these two universes.</p>
+                    <p>I have worked with popular frameworks such as Bootstrap and libraries such as jQuery. Check out my portfolio and if you're interested, send me an email. </p>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </footer>
+
+    <div class="skills ">
+        <ul class="list-unstyled list-inline">
+            <li>
+                <img src="img/icons8-Html 5 Filled-50-1.png" alt="html">
+            </li>
+            <li>
+                <img src="img/icons8-CSS3 Filled-50-1.png" alt="css">
+            </li>
+            <li>
+                <img src="img/icons8-Atom Editor-48-1.png" alt="atom">
+            </li>
+            <li>
+                <img src="img/icons8-Git Filled-50.png" alt="git">
+            </li>
+            <li>
+                <img src="img/icons8-JavaScript Filled-50-1.png" alt="js">
+            </li>
+            <li>
+                <img src="img/icons8-JQuery Filled-50-1.png" alt="jquery">
+            </li>
+        </ul>
+    </div>
+
+
+    <!--=================  CARDS PORTFOLIO ======================-->
+
+    <div class="cartes container">
+        <div class="row ">
+            <h2 class="text-center ">More</h2>
+
+            <div class="card col-lg-4 ">
+                <img class="card-img-top " src="img/leboncoin.png" alt="screen page leboncoin">
+                <img class="info" src="img/icons8-Info-48.png" alt="icon info">
+
+            </div>
+
+            <div class="card col-lg-4">
+                <img class="card-img-top" src="img/memory.png" alt="screen memory game">
+                <img class="info" src="img/icons8-Info-48.png" alt="icon info">
+
+            </div>
+
+            <div class="card col-lg-4">
+                <img class="card-img-top" src="img/everlasting.png" alt="screen site tatoueur">
+                <img class="info" src="img/icons8-Info-48.png" alt="icon info">
+
+            </div>
+
+            <div class="card col-lg-4 ">
+                <img class="card-img-top " src="img/coach.png" alt="screen site coachSportif">
+                <img class="info" src="img/icons8-Info-48.png" alt="icon info">
+
+            </div>
+
+            <div class="card col-lg-4">
+                <img class="card-img-top" src="img/minichat.png" alt="screen minichat">
+                <img class="info" src="img/icons8-Info-48.png" alt="">
+
+            </div>
+
+            <div class="card col-lg-4">
+                <img class="card-img-top" src="img/beautytech.png" alt="screen blog tech">
+                <img class="info" src="img/icons8-Info-48.png" alt="">
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <a href="WebCV LeilaL.pdf" download>Download my CV</a>
+
+
+    <!--================= CONTACT ======================-->
+
+    <section id="contact">
+        <div class="container">
+            <div class="row text-center social">
+                <h3>Contact</h3>
+                <ul class="list-unstyled list-inline">
+                    <li>
+                        <a href="mailTo:leila.simplon@hotmail.com" target="_blank"><i class="fa fa-envelope fa-2x"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank"><i class="fa fa-google-plus-square fa-2x"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official fa-2x"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!--============== FOOTER =======================-->
+
+    <footer class="text-center">
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>Coded with <i class="fa fa-fw fa-heart fa-spin"></i> by LEILA </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
-  <!-- Add your site or application content here -->
+    <!-- Add your site or application content here -->
 
-  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-  <script>
-  (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-    e.src='https://www.google-analytics.com/analytics.js';
-    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-    ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')
     </script>
-  </body>
-  </html>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function(b, o, i, l, e, r) {
+            b.GoogleAnalyticsObject = l;
+            b[l] || (b[l] =
+                function() {
+                    (b[l].q = b[l].q || []).push(arguments)
+                });
+            b[l].l = +new Date;
+            e = o.createElement(i);
+            r = o.getElementsByTagName(i)[0];
+            e.src = 'https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e, r)
+        }(window, document, 'script', 'ga'));
+        ga('create', 'UA-XXXXX-X', 'auto');
+        ga('send', 'pageview');
+    </script>
+</body>
+
+</html>

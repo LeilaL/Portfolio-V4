@@ -1,270 +1,275 @@
 @font-face {
-  font-family: "diamond";
-  src: url(../fonts/black_diamonds/BlackDiamondsPersonalUse.ttf);
+    font-family: "diamond";
+    src: url(../fonts/black_diamonds/BlackDiamondsPersonalUse.ttf);
 }
 
 html, body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 
 /*$$$$$$$$$$$$$$ HEADER $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 
 header, .navbar-default {
-  background-color: #ddd;
+    background-color: #ddd;
 }
 
 .navbar-default {
-  border-color: none !important;
+    border-color: none !important;
 }
 
 .navbar-fixed-top {
-  border-width: 0;
+    border-width: 0;
 }
 
 #brand {
-  font-family: "diamond";
-  font-size: 30px;
+    font-family: "diamond";
+    font-size: 30px;
 }
 
 #brand, .navbar-default .navbar-nav>li>a, header h1, .arrow-down {
-  color: #095057;
-  /*#095057*/
+    color: #095057;
+    /*#095057*/
 }
 
 .navbar-default .navbar-nav>li>a:hover {
-  color: #F24C58;
+    color: #F24C58;
 }
 
 header nav a:after, .navbar-header a:after {
-  content: '';
-  display: block;
-  margin: auto;
-  height: 1px;
-  width: 0%;
-  background: transparent;
-  transition: .5s;
+    content: '';
+    display: block;
+    margin: auto;
+    height: 1px;
+    width: 0%;
+    background: transparent;
+    transition: .5s;
 }
 
 header nav a:hover:after, .navbar-header a:hover:after {
-  width: 100%;
-  background: #F24C58;
+    width: 100%;
+    background: #F24C58;
 }
 
 .welcome {
-  padding: 200px;
-  background: url("../img/portfolio.jpg") center center no-repeat fixed;
-  background-size: cover;
-  height: 100vh;
-  letter-spacing: 10px;
-  font-size: 30px;
+    padding: 200px;
+    background: url("../img/portfolio.jpg") center center no-repeat fixed;
+    background-size: cover;
+    height: 100vh;
+    letter-spacing: 10px;
+    font-size: 30px;
 }
 
 .welcome h1:hover {
-  color: #F24C58;
+    color: #F24C58;
 }
 
 .arrow-down a {
-  color: #095057;
+    color: #095057;
 }
 
 .arrow-down a:hover {
-  transition: color 0.3s linear;
-  color: #F24C58;
+    transition: color 0.3s linear;
+    color: #F24C58;
 }
-
 
 
 /*$$$$$$$$$$$$$$$$$$$ ABOUT $$$$$$$$$$$$$$$$$$$$$$$*/
 
 #about {
-  text-align: center;
-  min-height: 100vh;
-  width: 100%;
-  background-color: white;
+    text-align: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: white;
 }
 
 .about {
-  padding: 0% 15%;
+    padding: 0% 15%;
 }
 
 .about h1 {
-  margin: 5%;
-  color: #095057;
-  font-family: "diamond";
-  font-size: 50px;
+    margin: 5%;
+    color: #095057;
+    font-family: "diamond";
+    font-size: 50px;
 }
 
 .about h2 {
-  color: #095057;
+    color: #095057;
 }
 
 .about p {
-  font-size: 19px;
-  color: #095057;
-
+    font-size: 19px;
+    color: #095057;
 }
 
 .about img {
-  display: inline-block;
-  height: 33vh;
+    display: inline-block;
+    height: 33vh;
 }
 
 .skills {
-  margin-left: 37%;
+    margin-left: 37%;
 }
 
+
 /*$$$$$$$$$$$$$$$$ PORTFOLIO $$$$$$$$$$$$$$$$$$$*/
+
 .images {
-  width: 60%;
-  /*height: 300px;*/
-  position: absolute;
-  margin-left: 12%;
+    width: 60%;
+    /*height: 300px;*/
+    position: absolute;
+    margin-left: 12%;
 }
 
 #portfolio {
-  margin-bottom: 25%;
+    margin-bottom: 25%;
 }
 
 #portfolio .text-center {
-  color: #095057;
-  margin-top: 100px;
+    color: #095057;
+    margin-top: 100px;
 }
 
 #portfolio h2 {
-  font-size: 50px;
-  font-family: "diamond";
+    font-size: 50px;
+    font-family: "diamond";
 }
 
 .carousel-inner img {
-  width: 100%;
+    width: 100%;
 }
 
 .modal-footer .btn-primary {
-  background-color: #F24C58;
-  border-color:  #F24C58;
+    background-color: #F24C58;
+    border-color: #F24C58;
 }
 
 .modal-footer .btn-primary:hover {
-  background-color: #095057;
+    background-color: #095057;
 }
 
 #exampleModalLabel {
-  font-family: "diamond";
-  font-size: 25px;
-  margin-left: 50%;
-  color: #095057;
+    font-family: "diamond";
+    font-size: 25px;
+    margin-left: 50%;
+    color: #095057;
 }
 
 .modal-body {
-  font-size: 19px;
-  color: #095057;
+    font-size: 19px;
+    color: #095057;
 }
+
 
 /*$$$$$$$$$$$$$$$$ CARDS PORTFOLIO $$$$$$$$$$$$$$$$$$$*/
 
+
 /*.container .card {
-  border: none;
+border: none;
 }*/
 
-.card-img-top{
-  width: 100%;
-height: 230px;
+.card-img-top {
+    width: 100%;
+    height: 230px;
 }
 
-.card-img-top:hover{
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
+.card-img-top:hover {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
 }
 
 .cartes {
-  margin-top: 100px;
+    margin-top: 100px;
 }
 
 .cartes .info {
-  position: absolute;
-width: 40px;
-text-align: center;
-bottom: 10%;
-right: 10%;
+    position: absolute;
+    width: 40px;
+    text-align: center;
+    bottom: 10%;
+    right: 10%;
 }
 
 .cartes h2 {
-font-size: 50px;
-font-family: "diamond";
-color: #095057;
-margin-bottom: 40px;
+    font-size: 50px;
+    font-family: "diamond";
+    color: #095057;
+    margin-bottom: 40px;
 }
+
+
 /*$$$$$$$$$$$$$$$$ CONTACT $$$$$$$$$$$$$$$$$$$*/
 
 section {
-  background-color: #F8F8F8;
-  color: #095057;
+    background-color: #F8F8F8;
+    color: #095057;
 }
+
 
 /*section .container {
 padding-top: 5px;
 }*/
 
 section .social {
-  margin: 50px 0;
+    margin: 50px 0;
 }
 
 section h3 {
-  margin-bottom: 40px;
-  font-family: "diamond";
-  color: #095057;
-  font-size: 50px;
+    margin-bottom: 40px;
+    font-family: "diamond";
+    color: #095057;
+    font-size: 50px;
 }
 
 section a {
-  color: #095057;
-  transition: 0.3s;
-  margin-right: 20px;
+    color: #095057;
+    transition: 0.3s;
+    margin-right: 20px;
 }
 
 section a:hover {
-  color: #F24C58;
+    color: #F24C58;
 }
 
 section ul, footer small {
-  display: inline;
+    display: inline;
 }
 
 .list-inline>li {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
 #contact {
-  margin-top: 100px;
+    margin-top: 100px;
 }
-
 
 
 /*$$$$$$$$$$$$$$$$$$$$ FOOTER $$$$$$$$$$$$$$$$$$$*/
 
 footer .footer-below {
-  padding: 25px 0;
-  background-color: #F8F8F8;
+    padding: 25px 0;
+    background-color: #F8F8F8;
 }
 
 footer .fa-fw {
-  color: red;
-  font-size: 24px;
+    color: red;
+    font-size: 24px;
 }
 
 footer p {
-  color: #F24C58;
+    color: #F24C58;
 }
 
 
 /*!!!!!!!!!!!!!! DESKTOP !!!!!!!!!!!!!!*/
+
 @media (min-width: 900px) {
-  #about .col-lg-10 {
-    margin-left: 100px;
-  }
+    #about .col-lg-10 {
+        margin-left: 100px;
+    }
 }
