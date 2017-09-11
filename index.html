@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.css">
 
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"> -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -25,10 +27,9 @@
 
 <body>
     <!--[if lt IE 8]>
-  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
 
-    <!--============== HEADER =======================-->
+
+    <!============== HEADER =======================-->
 
 
     <header>
@@ -65,26 +66,21 @@
     <div class="container" id="portfolio">
         <h2 class="text-center">Portfolio</h2>
 
-        <a href="" data-toggle="modal" data-target="#mod">
+        <a href="https://leilal.github.io/AirbnbPage/" target="_blank" >
       <img class="images" src="img/airbnb.png" alt="airbnb">
     </a>
 
-        <a href="" data-toggle="modal" data-target="#modal">
+        <a href="https://leilal.github.io/Palais-des-Beaux-Arts/" target="_blank" >
       <img class="images" src="img/pba.png" alt="pba">
     </a>
 
-        <a href="" data-toggle="modal" data-target="#myModal">
+        <a href="https://leilal.github.io/Spotlight/" target="_blank" >
       <img class="images" src="img/spotlight.png" alt="spotlight">
     </a>
 
-        <a href="" data-toggle="modal" data-target="#mode">
+        <a href="https://leilal.github.io/GooglePage/" target="_blank" >
       <img class="images" src="img/google.png" alt="google">
     </a>
-
-        <div class="nav slider mt-2">
-            <button class="mr-3" type="button" name="button" onclick="before(this)"><<</button>
-            <button type="button" name="button" onclick="slider(this)">>></button>
-        </div>
 
 
     </div>
@@ -184,10 +180,15 @@
                     <p>My name is Leila, I am an aspiring web developer. I love developing clean and elegant dynamic websites and web applications. I've learned languages such as HTML, CSS, JavaScript and continually learn much more. </p>
                     <p> I am from a training in transport (Bachelor's degree), after a first experience as a shipping agent and skills acquired in web development, I would like to find a job which combining these two universes.</p>
                     <p>I have worked with popular frameworks such as Bootstrap and libraries such as jQuery. Check out my portfolio and if you're interested, send me an email. </p>
+                    <div class="btn">
+                      <a href="WebCV LeilaL.pdf" download>Click to download my CV</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+
 
     <div class="skills ">
         <ul class="list-unstyled list-inline">
@@ -221,37 +222,37 @@
 
             <div class="card col-lg-4 ">
                 <img class="card-img-top " src="img/leboncoin.png" alt="screen page leboncoin">
-                <img class="info" src="img/icons8-Info-48.png" alt="icon info">
+                <img onclick="cardReveal()" class="info" src="img/icons8-Info-48.png" alt="icon info">
 
             </div>
 
             <div class="card col-lg-4">
                 <img class="card-img-top" src="img/memory.png" alt="screen memory game">
-                <img class="info" src="img/icons8-Info-48.png" alt="icon info">
+                <img onclick="cardReveal()" class="info" src="img/icons8-Info-48.png" alt="icon info">
 
             </div>
 
             <div class="card col-lg-4">
-                <img class="card-img-top" src="img/everlasting.png" alt="screen site tatoueur">
-                <img class="info" src="img/icons8-Info-48.png" alt="icon info">
+                <img class="card-img-top" src="img/myfurniture.png" alt="screen site tatoueur">
+                <img onclick="cardReveal()" class="info" src="img/icons8-Info-48.png" alt="icon info">
 
             </div>
 
             <div class="card col-lg-4 ">
                 <img class="card-img-top " src="img/coach.png" alt="screen site coachSportif">
-                <img class="info" src="img/icons8-Info-48.png" alt="icon info">
+                <img onclick="cardReveal()" class="info" src="img/icons8-Info-48.png" alt="icon info">
 
             </div>
 
             <div class="card col-lg-4">
                 <img class="card-img-top" src="img/minichat.png" alt="screen minichat">
-                <img class="info" src="img/icons8-Info-48.png" alt="">
+                <img onclick="cardReveal()" class="info" src="img/icons8-Info-48.png" alt="">
 
             </div>
 
             <div class="card col-lg-4">
                 <img class="card-img-top" src="img/beautytech.png" alt="screen blog tech">
-                <img class="info" src="img/icons8-Info-48.png" alt="">
+                <img onclick="cardReveal()" class="info" src="img/icons8-Info-48.png" alt="">
 
             </div>
 
@@ -259,7 +260,6 @@
     </div>
 
 
-    <a href="WebCV LeilaL.pdf" download>Download my CV</a>
 
 
     <!--================= CONTACT ======================-->
@@ -308,6 +308,7 @@
     <!-- Add your site or application content here -->
 
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script> -->
     <script>
         window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')
     </script>

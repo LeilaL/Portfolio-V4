@@ -205,6 +205,23 @@ border: none;
 
 /*$$$$$$$$$$$$$$$$ CONTACT $$$$$$$$$$$$$$$$$$$*/
 
+.btn{
+height: 3rem;
+border: 2px solid #095057;
+}
+
+.btn a {
+  color: #095057;
+  font-size: 17px;
+  letter-spacing: .5px;
+  font-weight: bold;
+}
+
+.btn a:hover {
+  text-decoration: none;
+  color: #F24C58;
+}
+
 section {
     background-color: #F8F8F8;
     color: #095057;
@@ -252,7 +269,7 @@ section ul, footer small {
 /*$$$$$$$$$$$$$$$$$$$$ FOOTER $$$$$$$$$$$$$$$$$$$*/
 
 footer .footer-below {
-    padding: 25px 0;
+    /*padding: 25px 0;*/
     background-color: #F8F8F8;
 }
 

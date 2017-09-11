@@ -1,3 +1,4 @@
+// ************ SLIDER ***************
 var index = 0;
 var carousel = document.getElementsByClassName("images");
 
@@ -25,4 +26,11 @@ function before() {
     index--;
     carousel[index].style.zIndex = 1;
   }
+}
+
+
+// ************ CARDS ***************
+
+function cardReveal() {
+  $(.card).append("<div><h4>??</h4><br><br><p>???</p></div>");
 }
