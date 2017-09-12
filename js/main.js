@@ -2,7 +2,7 @@
 var index = 0;
 var carousel = document.getElementsByClassName("images");
 
-setInterval(before,2500);
+setInterval(before,2700);
 
 function slider () {
 carousel[index].style.display = -1;
@@ -30,7 +30,10 @@ function before() {
 
 
 // ************ CARDS ***************
+var click = document.getElementsByClassName("screen");
 
-function cardReveal() {
-  $(.card).append("<div><h4>??</h4><br><br><p>???</p></div>");
+function cardReveal(img) {
+img.style.opacity = 0;
+var carte = img.parentNode;
+  carte.append("<div><h4>??</h4><br><br><p>???</p></div>");
 }
