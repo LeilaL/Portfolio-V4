@@ -213,11 +213,8 @@ font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .a_masquer {
-  /*z-index: 20;*/
   position: absolute;
   top: 40px;
-  /*text-align: center;*/
-  /*margin: 0 auto;*/
   left: 75px;
   background-color: lightgrey;
   width: 65%;

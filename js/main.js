@@ -46,7 +46,7 @@ function before() {
 //   $(".cardImage").append("<div><h4>Reproduction page d'accueuil LeBonCoin</h4><br><br><p>Le site est responsive et mobile first. Avec un effet cliquable sur la map. Utilisation de bootstrap.</p></div>");
 // }
 
-
+//
 // function masquer_div(a_masquer)
 // {
 //   if (document.getElementById("a_masquer").style.display == 'none') {
@@ -57,7 +57,9 @@ function before() {
 //   }
 // }
 
-$(".info").click(function(){
-  $(this).sibblings("#a_masquer").css("display","b");
-  $(this).sibblings("#a_masquer").css("display","block");
+$(".info").mouseenter(function(){
+  $(this).siblings(".a_masquer").css("display","block");
+});
+$(".info").mouseleave(function(){
+  $(this).siblings(".a_masquer").css("display","none");
 });
