@@ -107,7 +107,7 @@ header nav a:hover:after, .navbar-header a:hover:after {
 
 .about img {
     display: inline-block;
-    height: 33vh;
+    width: 150px;
 }
 
 .skills {
@@ -166,21 +166,21 @@ header nav a:hover:after, .navbar-header a:hover:after {
 
 /*$$$$$$$$$$$$$$$$ CARDS PORTFOLIO $$$$$$$$$$$$$$$$$$$*/
 
-
-/*.container .card {
-border: none;
-}*/
-
 .card-img-top {
     width: 100%;
     height: 230px;
 }
 
 .card-img-top:hover {
-    -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    -o-filter: blur(5px);
-    -ms-filter: blur(5px);
+    /*-webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);*/
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
 }
 
 .cartes {
@@ -202,6 +202,27 @@ border: none;
     margin-bottom: 40px;
 }
 
+.container-fluid .row .card {
+  padding: 0;
+}
+
+.cardImage p {
+  color: #095057;
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+
+.a_masquer {
+  /*z-index: 20;*/
+  position: absolute;
+  top: 40px;
+  /*text-align: center;*/
+  /*margin: 0 auto;*/
+  left: 75px;
+  background-color: lightgrey;
+  width: 65%;
+  height: 70%;
+}
 
 /*$$$$$$$$$$$$$$$$ CONTACT $$$$$$$$$$$$$$$$$$$*/
 

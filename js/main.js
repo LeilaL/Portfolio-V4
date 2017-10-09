@@ -30,10 +30,34 @@ function before() {
 
 
 // ************ CARDS ***************
-var click = document.getElementsByClassName("screen");
+// var click = document.getElementsByClassName("screen");
+//
+// function cardReveal(img) {
+// img.style.opacity = 0;
+// var carte = img.parentNode;
+//   carte.append("<div><h4>??</h4><br><br><p>???</p></div>");
+// }
 
-function cardReveal(img) {
-img.style.opacity = 0;
-var carte = img.parentNode;
-  carte.append("<div><h4>??</h4><br><br><p>???</p></div>");
-}
+// $(".info").click(function() {
+//   cardReveal();
+// })
+//
+// function cardReveal() {
+//   $(".cardImage").append("<div><h4>Reproduction page d'accueuil LeBonCoin</h4><br><br><p>Le site est responsive et mobile first. Avec un effet cliquable sur la map. Utilisation de bootstrap.</p></div>");
+// }
+
+
+// function masquer_div(a_masquer)
+// {
+//   if (document.getElementById("a_masquer").style.display == 'none') {
+//        document.getElementById("a_masquer").style.display = 'block';
+//   }
+//   else {
+//        document.getElementById("a_masquer").style.display = 'none';
+//   }
+// }
+
+$(".info").click(function(){
+  $(this).sibblings("#a_masquer").css("display","b");
+  $(this).sibblings("#a_masquer").css("display","block");
+});
