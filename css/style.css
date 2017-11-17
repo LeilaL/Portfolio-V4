@@ -176,11 +176,11 @@ header nav a:hover:after, .navbar-header a:hover:after {
     -moz-filter: blur(3px);
     -o-filter: blur(3px);
     -ms-filter: blur(3px);*/
-    filter: grayscale(100%);
+    /*filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     -ms-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
+    -o-filter: grayscale(100%);*/
 }
 
 .cartes {
@@ -206,7 +206,7 @@ header nav a:hover:after, .navbar-header a:hover:after {
   padding: 0;
 }
 
-.cardImage p {
+.cardImage p, .a_masquer h4 {
   color: #095057;
 font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -216,9 +216,17 @@ font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   position: absolute;
   top: 40px;
   left: 75px;
-  background-color: lightgrey;
+  background-color: #ebebeb;
+  border-radius: 10px;
   width: 65%;
   height: 70%;
+  transition: 3s;
+}
+
+.button {
+  background-color: #F24C58;
+  border: #F24C58;
+  color: white;
 }
 
 /*$$$$$$$$$$$$$$$$ CONTACT $$$$$$$$$$$$$$$$$$$*/
@@ -302,6 +310,11 @@ footer p {
 
 
 /*!!!!!!!!!!!!!! DESKTOP !!!!!!!!!!!!!!*/
+@media (max-width: 980px) {
+  .about {
+      padding: 15% 15%;
+  }
+}
 
 @media (min-width: 900px) {
     #about .col-lg-10 {
