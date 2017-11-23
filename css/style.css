@@ -176,18 +176,33 @@ header nav a:hover:after, .navbar-header a:hover:after {
 .card-img-top {
     width: 100%;
     height: 230px;
-}
-
-.card-img-top:hover {
-    /*-webkit-filter: blur(3px);
-    -moz-filter: blur(3px);
-    -o-filter: blur(3px);
-    -ms-filter: blur(3px);*/
     /*filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     -ms-filter: grayscale(100%);
     -o-filter: grayscale(100%);*/
+}
+
+.cardImage {
+/*background: #095057;*/
+/*border: 3px solid #F24C58;*/
+}
+
+.cardImage .screen{
+	/*opacity: 1;*/
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+  filter: grayscale(100%);
+}
+
+.cardImage .screen {
+	/*opacity: 0.7;*/
+}
+
+.cardImage .screen:hover {
+	opacity: 1;
+  background: none;
+  -webkit-filter: none;
 }
 
 .cartes {
