@@ -35,6 +35,6 @@ $(".info").mouseenter(function(){
   $(this).siblings(".a_masquer").css("display","block");
   // $(".a_masquer").css("display","block");
 });
-$(".info").mouseleave(function(){
+$(".screen").mouseleave(function(){
   $(this).siblings(".a_masquer").css("display","none");
 });
