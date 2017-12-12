@@ -29,7 +29,7 @@ function before() {
 }
 
 
-// ************ CARDS ***************
+// ************ CARDS REVEAL ***************
 
 $(".info").mouseenter(function(){
   $(this).siblings(".a_masquer").css("display","block");
@@ -38,3 +38,23 @@ $(".info").mouseenter(function(){
 $(".screen").mouseleave(function(){
   $(this).siblings(".a_masquer").css("display","none");
 });
+
+
+// if (screen.width < 768) {
+//   $("#lien1").attr("data-toggle","collapse");
+//   $("#lien1").attr("data-target",".navbar-collapse");
+//   $("#lien2").attr("data-toggle","collapse");
+//   $("#lien2").attr("data-target",".navbar-collapse");
+//   $("#lien3").attr("data-toggle","collapse");
+//   $("#lien3").attr("data-target",".navbar-collapse");
+// }
+
+
+// $(".info").hover(function(){
+//     $(this).siblings(".screen").css("opacity", 1);
+//     $(this).siblings(".screen").css("-webkit-filter", "none");
+//     }
+//
+// $(".info").mouseleave(function(){
+//       $(this).siblings(".screen").css("filter", "grayscale(100%)");
+// });

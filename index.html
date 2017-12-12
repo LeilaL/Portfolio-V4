@@ -13,23 +13,23 @@
     <link rel="icon" href="img/lune.png">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.css">
 
-<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"> -->
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    <script src="js/bootstrap.js"></script>
+
 
 </head>
 
 <body>
     <!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+       <![endif]-->
 
 
-    <!============== HEADER =======================-->
+    <!--============== HEADER =======================-->
 
 
     <header>
@@ -44,11 +44,11 @@
             <span class="icon-bar"></span>
           </button>
                 </div>
-                <nav>
-                    <ul class="nav navbar-nav navbar-right collapse navbar-collapse" id="myCollapsible">
-                        <li><a href="#about">ABOUT</a></li>
-                        <li><a href="#portfolio">PORTFOLIO</a></li>
-                        <li><a href="#contact">CONTACT</a></li>
+                <nav class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right" id="myCollapsible">
+                        <li><a id="lien1" href="#about">ABOUT</a></li>
+                        <li><a id="lien2" href="#project">PROJECTS</a></li>
+                        <li><a id="lien3" href="#contact">CONTACT</a></li>
                     </ul>
                 </nav>
             </div>
@@ -56,14 +56,14 @@
         <div class="container-fluid welcome" id="welcome">
             <h1 class="text-center">WELCOME</h1>
             <div class="arrow-down text-center">
-                <a href="#portfolio"><i class="fa fa-angle-down fa-2x"></i></a>
+                <a href="#about"><i class="fa fa-angle-down fa-2x"></i></a>
             </div>
         </div>
     </header>
 
     <!--============ CAROUSEL PORTFOLIO ==================-->
 
-    <div class="container" id="portfolio">
+    <!-- <div class="container" id="portfolio">
         <h2 class="text-center">Portfolio</h2>
 
         <a href="https://leilal.github.io/AirbnbPage/" target="_blank" >
@@ -83,7 +83,7 @@
     </a>
 
 
-    </div>
+    </div> -->
 
 
 
@@ -149,24 +149,6 @@
         </div>
     </div>
 
-    <div class="modal fade" id="mod" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Airbnb</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-                </div>
-                <div class="modal-body">
-                    Reproduction de la page d'accueil d' Airbnb dans un positionnement aussi fidèle que possible.
-                </div>
-                <div class="modal-footer">
-                    <a href="https://leilal.github.io/AirbnbPage/" target="_blank"><button type="button" class="btn btn-primary">Voir le site</button></a>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!--=============== ABOUT ==================-->
 
@@ -220,7 +202,7 @@
 
     <!--=================  CARDS PORTFOLIO ======================-->
 
-    <div class="cartes container-fluid">
+    <div class="cartes container-fluid" id="project">
         <div class="row ">
             <h2 class="text-center ">More</h2>
 
@@ -229,8 +211,8 @@
               <div class="card text-center a_masquer" style="display:none">
                 <div class="card-block">
                   <h4 class="card-title"><strong>Leboncoin</strong></h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="https://github.com/LeilaL/Leboncoin" class="btn button"><strong>Lien Site</strong></a>
+                  <p class="card-text">Reproduction de la page d'accueil Leboncoin.fr (9ème semaine de formation front)</p>
+                  <a href="https://github.com/LeilaL/Leboncoin" target = "_blank" class="btn button"><strong>Lien GitHub</strong></a>
                 </div>
               </div>
                 <img class="info" src="img/icons8-Info-48.png" alt="icon info">
@@ -241,9 +223,9 @@
                 <img class="card-img-top screen" src="img/memory.png" alt="screen memory game">
                 <div class="card a_masquer text-center" style="display:none">
                   <div class="card-block">
-                    <h4 class="card-title"><strong>Jeux des paires JS</strong></h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="https://leilal.github.io/Memory-Game/" class="btn button"><strong>Lien Site</strong></a>
+                    <h4 class="card-title"><strong>Jeux</strong></h4>
+                    <p class="card-text">Jeux des paires en JS(2ème semaine de formation js)</p>
+                    <a href="https://github.com/LeilaL/Memory-Game/" target = "_blank" class="btn button"><strong>Lien GitHub</strong></a>
                   </div>
                 </div>
                 <img class="info" src="img/icons8-Info-48.png" alt="icon info">
@@ -253,9 +235,9 @@
                 <img class="card-img-top screen" src="img/myfurniture.png" alt="screen site tatoueur">
                 <div class="card a_masquer text-center" style="display:none">
                   <div class="card-block">
-                    <h4 class="card-title"><strong>Site E-commerce PHP/SQL</strong></h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="https://github.com/Simplon-Roubaix/SiteE-commerce-Nicolas-Leila" class="btn button"><strong>Lien Github</strong></a>
+                    <h4 class="card-title"><strong>My Furniture</strong></h4>
+                    <p class="card-text">Création d'un site e-commerce en binôme. (1ère,2ème et 3ème semaine de formation back)</p>
+                    <a href="https://github.com/Simplon-Roubaix/SiteE-commerce-Nicolas-Leila" target = "_blank" class="btn button"><strong>Lien Github</strong></a>
                   </div>
                 </div>
                 <img class="info" src="img/icons8-Info-48.png" alt="icon info">
@@ -266,8 +248,8 @@
                 <div class="card a_masquer text-center" style="display:none">
                   <div class="card-block">
                     <h4 class="card-title"><strong>Blog Coach Sportif</strong></h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="https://leilal.github.io/CoachSportif/" class="btn button"><strong>Lien Site</strong></a>
+                    <p class="card-text">Production d"un site moderne et responsive (9ème semaine de formation front). </p>
+                    <a href="https://github.com/LeilaL/CoachSportif/" target = "_blank" class="btn button"><strong>Lien GitHub</strong></a>
                   </div>
                 </div>
                 <img class="info" src="img/icons8-Info-48.png" alt="icon info">
@@ -277,9 +259,9 @@
                 <img class="card-img-top screen" src="img/minichat.png" alt="screen minichat">
                 <div class="card a_masquer text-center" style="display:none">
                   <div class="card-block">
-                    <h4 class="card-title"><strong>Mini Chat JS</strong></h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="https://leilal.github.io/Mini-Chat/" class="btn button"><strong>Lien Site</strong></a>
+                    <h4 class="card-title"><strong>Mini Chat</strong></h4>
+                    <p class="card-text">Création d'un mini chat à l'aide de jQuery (4ème semaine de formation js).</p>
+                    <a href="https://github.com/LeilaL/Mini-Chat/" target = "_blank" class="btn button"><strong>Lien GitHub</strong></a>
                   </div>
                 </div>
                 <img class="info" src="img/icons8-Info-48.png" alt="">
@@ -289,9 +271,33 @@
                 <img class="card-img-top screen" src="img/beautytech.png" alt="screen blog tech">
                 <div class="card a_masquer text-center" style="display:none">
                   <div class="card-block">
-                    <h4 class="card-title"><strong>Blog Tech</strong></h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="https://leilal.github.io/Mini-Chat/" class="btn button"><strong>Lien Site</strong></a>
+                    <h4 class="card-title"><strong>Beauty-and-the-Tech</strong></h4>
+                    <p class="card-text">Création d'un blog sur la tech, à l'aide de php et wordpress.</p>
+                    <a href="https://github.com/LeilaL/Beauty-and-the-Tech/" target = "_blank" class="btn button"><strong>Lien GitHub</strong></a>
+                  </div>
+                </div>
+                <img class="info" src="img/icons8-Info-48.png" alt="">
+            </div>
+
+            <div class="card cardImage col-sm-4 col-lg-4">
+                <img class="card-img-top screen" src="img/spotlight.png" alt="screen blog tech">
+                <div class="card a_masquer text-center" style="display:none">
+                  <div class="card-block">
+                    <h4 class="card-title"><strong>Spotlight</strong></h4>
+                    <p class="card-text">Création d'un blog sur la tech, à l'aide de php et wordpress.</p>
+                    <a href="https://github.com/LeilaL/Spotlight" target = "_blank" class="btn button"><strong>Lien GitHub</strong></a>
+                  </div>
+                </div>
+                <img class="info" src="img/icons8-Info-48.png" alt="">
+            </div>
+
+            <div class="card cardImage col-sm-4 col-lg-4">
+                <img class="card-img-top screen" src="img/ibrary.png" alt="screen blog tech">
+                <div class="card a_masquer text-center" style="display:none">
+                  <div class="card-block">
+                    <h4 class="card-title"><strong>Library</strong></h4>
+                    <p class="card-text">Création d'un blog sur la tech, à l'aide de php et wordpress.</p>
+                    <a href="https://github.com/LeilaL/Spotlight" target = "_blank" class="btn button"><strong>Lien GitHub</strong></a>
                   </div>
                 </div>
                 <img class="info" src="img/icons8-Info-48.png" alt="">
@@ -346,10 +352,9 @@
 
 
 
-    <!-- Add your site or application content here -->
 
+    <script src="js/bootstrap.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script> -->
     <script>
         window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')
     </script>
