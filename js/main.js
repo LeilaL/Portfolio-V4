@@ -1,43 +1,54 @@
 // ************ SLIDER ***************
-var index = 0;
-var carousel = document.getElementsByClassName("images");
-
-setInterval(before,2700);
-
-function slider () {
-carousel[index].style.display = -1;
-if (index==3){
-  index=0;
-  carousel[index].style.zIndex = 1;
-}
-else {
-  index++;
-  carousel[index].style.zIndex = 1;
-}
-}
-
-function before() {
-  carousel[index].style.zIndex = -1;
-  if (index==0){
-    index=3;
-    carousel[index].style.zIndex = 1;
-  }
-  else {
-    index--;
-    carousel[index].style.zIndex = 1;
-  }
-}
+// var index = 0;
+// var carousel = document.getElementsByClassName("images");
+//
+// setInterval(before,2700);
+//
+// function slider () {
+// carousel[index].style.display = -1;
+// if (index==3){
+//   index=0;
+//   carousel[index].style.zIndex = 1;
+// }
+// else {
+//   index++;
+//   carousel[index].style.zIndex = 1;
+// }
+// }
+//
+// function before() {
+//   carousel[index].style.zIndex = -1;
+//   if (index==0){
+//     index=3;
+//     carousel[index].style.zIndex = 1;
+//   }
+//   else {
+//     index--;
+//     carousel[index].style.zIndex = 1;
+//   }
+// }
 
 
 // ************ CARDS REVEAL ***************
 
-$(".info").mouseenter(function(){
-  $(this).siblings(".a_masquer").css("display","block");
-  // $(".a_masquer").css("display","block");
-});
-$(".screen").mouseleave(function(){
-  $(this).siblings(".a_masquer").css("display","none");
-});
+
+if (screen.width < 992) {
+    /* The viewport is less than, or equal to, 992 pixels wide */
+    $(".info").click(function(){
+      alert("test smart");
+    });
+} else {
+    /* The viewport is greater than 992 pixels wide */
+    $(".info").mouseenter(function(){
+      $(this).siblings(".a_masquer").css("display","block");
+      // $(".a_masquer").css("display","block");
+    });
+
+    $(".a_masquer").mouseleave(function(){
+      $(this).css("display","none");
+    });
+
+}
 
 
 // if (screen.width < 768) {

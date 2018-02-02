@@ -171,6 +171,7 @@ header nav a:hover:after, .navbar-header a:hover:after {
 }
 
 
+
 /*$$$$$$$$$$$$$$$$ CARDS PORTFOLIO $$$$$$$$$$$$$$$$$$$*/
 
 .card-img-top {
@@ -247,6 +248,15 @@ font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   border: #F24C58;
   color: white;
 }
+
+#projectRow .cardImage {
+  margin: 2em 0;
+}
+
+#project h3 {
+  color: #095057;
+}
+
 
 /*$$$$$$$$$$$$$$$$ CONTACT $$$$$$$$$$$$$$$$$$$*/
 
