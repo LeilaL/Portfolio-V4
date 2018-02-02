@@ -31,39 +31,35 @@
 
 // ************ CARDS REVEAL ***************
 
-$(".info").click(function(){
-  if (window.matchMedia("(max-width: 992px)").matches) {
-      /* The viewport is less than, or equal to, 992 pixels wide */
-        alert("test smartphone");
-        if($(".a_masquer").css("display") == "none"){
-          $(this).siblings(".a_masquer").css("display","block");
-        }
-        else{
-          $(this).siblings(".a_masquer").css("display","none");
-        }
-  }
-});
+// $(".info").click(function(){
+//   if (window.matchMedia("(max-width: 992px)").matches) {
+//       /* The viewport is less than, or equal to, 992 pixels wide */
+//         alert("test smartphone");
+//         if($(".a_masquer").css("display") == "none"){
+//           $(this).siblings(".a_masquer").css("display","block");
+//         }
+//         else{
+//           $(this).siblings(".a_masquer").css("display","none");
+//         }
+//   }
+// });
 
 
-// if (window.matchMedia("(min-width: 993px)").matches) {
-//     /* The viewport is greater than 992 pixels wide */
-//
-//     $(".info").mouseenter(function(){
-//       $(this).siblings(".a_masquer").css("display","block");
-//     });
-//
-//     $(".info").mouseleave(function(){
-//       $(".screen").mouseleave(function(){
-//         $(this).siblings(".a_masquer").css("display","none");
-//       });
-//     });
-//
-//     $(".a_masquer").mouseenter(function(){
-//       $(".a_masquer").mouseleave(function(){
-//         $(this).css("display","none");
-//       });
-//     });
-// }
+    $(".info").mouseenter(function(){
+      $(this).siblings(".a_masquer").css("display","block");
+    });
+
+    $(".info").mouseleave(function(){
+      $(".screen").mouseleave(function(){
+        $(this).siblings(".a_masquer").css("display","none");
+      });
+    });
+
+    $(".a_masquer").mouseenter(function(){
+      $(".a_masquer").mouseleave(function(){
+        $(this).css("display","none");
+      });
+    });
 
 
 // if (screen.width < 768) {
