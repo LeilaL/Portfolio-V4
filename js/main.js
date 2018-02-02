@@ -36,6 +36,7 @@ if (screen.width < 992) {
     /* The viewport is less than, or equal to, 992 pixels wide */
     $(".info").click(function(){
       if($(".a_masquer").css("display") === "none"){
+        alert("test");
         $(this).siblings(".a_masquer").css("display","block");
       }
       else{
