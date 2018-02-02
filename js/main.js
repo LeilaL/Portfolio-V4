@@ -35,7 +35,12 @@
 if (screen.width < 992) {
     /* The viewport is less than, or equal to, 992 pixels wide */
     $(".info").click(function(){
-      alert("test smart");
+      if($(".a_masquer").css("display") === "none"){
+        $(this).siblings(".a_masquer").css("display","block");
+      }
+      else{
+        $(this).siblings(".a_masquer").css("display","none");
+      }
     });
 } else {
     /* The viewport is greater than 992 pixels wide */
