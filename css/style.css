@@ -31,7 +31,6 @@ header, .navbar-default {
 
 #brand, .navbar-default .navbar-nav>li>a, header h1, .arrow-down {
     color: #095057;
-    /*#095057*/
 }
 
 .navbar-default .navbar-nav>li>a:hover {
@@ -110,66 +109,9 @@ header nav a:hover:after, .navbar-header a:hover:after {
     width: 150px;
 }
 
-/*#skills {
-    margin-left: 37%;
-}*/
-
-#skills .logo{
-  /*margin: 20px 0;*/
-}
-
 #skills ul {
   display: inline;
 }
-
-/*$$$$$$$$$$$$$$$$ PORTFOLIO $$$$$$$$$$$$$$$$$$$*/
-
-.images {
-    width: 60%;
-    /*height: 300px;*/
-    position: absolute;
-    margin-left: 12%;
-}
-
-#portfolio {
-    margin-bottom: 25%;
-}
-
-#portfolio .text-center {
-    color: #095057;
-    margin-top: 100px;
-}
-
-#portfolio h2 {
-    font-size: 50px;
-    font-family: "diamond";
-}
-
-.carousel-inner img {
-    width: 100%;
-}
-
-.modal-footer .btn-primary {
-    background-color: #F24C58;
-    border-color: #F24C58;
-}
-
-.modal-footer .btn-primary:hover {
-    background-color: #095057;
-}
-
-#exampleModalLabel {
-    font-family: "diamond";
-    font-size: 25px;
-    margin-left: 50%;
-    color: #095057;
-}
-
-.modal-body {
-    font-size: 19px;
-    color: #095057;
-}
-
 
 
 /*$$$$$$$$$$$$$$$$ CARDS PORTFOLIO $$$$$$$$$$$$$$$$$$$*/
@@ -177,20 +119,10 @@ header nav a:hover:after, .navbar-header a:hover:after {
 .card-img-top {
     width: 100%;
     height: 230px;
-    /*filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    -o-filter: grayscale(100%);*/
 }
 
-.cardImage {
-/*background: #095057;*/
-/*border: 3px solid #F24C58;*/
-}
 
 .cardImage .screen{
-	/*opacity: 1;*/
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
   filter: grayscale(100%);
@@ -255,6 +187,7 @@ font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 #project h3 {
   color: #095057;
+  margin-left: 15px;
 }
 
 
@@ -308,7 +241,6 @@ border: 2px solid #095057;
 }
 
 #list>li {
-    /*margin-top: 10px;*/
     display: inline-block;
     padding-left: 0px;
     padding-right: 0px;
@@ -322,7 +254,6 @@ border: 2px solid #095057;
 /*$$$$$$$$$$$$$$$$$$$$ FOOTER $$$$$$$$$$$$$$$$$$$*/
 
 footer .footer-below {
-    /*padding: 25px 0;*/
     background-color: #F8F8F8;
 }
 
